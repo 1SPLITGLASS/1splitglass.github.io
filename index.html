@@ -86,7 +86,8 @@ h1 .hi{color:var(--accent)}
 
 section.blk{padding:clamp(2.5rem,6vw,4rem) 0 0}
 section.blk > .wrap > .label{margin-bottom:.4rem}
-h2.big{font:400 clamp(1.8rem,4.2vw,2.8rem)/1.1 'Anton SC','Inter',sans-serif;margin:0 0 1.5rem;max-width:26ch}
+h2.big{font:400 clamp(1.8rem,4.2vw,2.8rem)/1.1 'Anton SC','Inter',sans-serif;margin:0 0 1.5rem;max-width:34ch}
+.intro{max-width:46rem;color:var(--muted);margin:-.5rem 0 1.5rem}
 .who p{max-width:46rem;color:var(--muted)}
 .who strong{color:var(--fg)}
 
@@ -105,6 +106,8 @@ footer a{color:var(--muted)}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","@id":"https://splitglass.com/#organization","name":"SPLITGLASS","alternateName":["SplitGlass","SplitGlass Maroc","SPLITGLASS Maroc"],"url":"https://splitglass.com/","logo":"https://1splitglass.github.io/og-default.png","sameAs":["https://www.linkedin.com/company/splitglass","https://github.com/1SPLITGLASS","https://1splitglass.github.io/"]},
+{"@type":"WebApplication","@id":"https://splitglass.com/outils/prix-de-reference#app","name":"Calculateur du prix de référence","url":"https://splitglass.com/outils/prix-de-reference","applicationCategory":"BusinessApplication","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"MAD"},"inLanguage":["fr","ar"],"publisher":{"@id":"https://splitglass.com/#organization"},"featureList":["Prix de référence selon l'article 44 du décret n° 2-22-431","Marchés d'études selon l'article 144","Arithmétique exacte, sans arrondi caché","Seuils, écarts et classement","Calcul dans le navigateur : saisies ni envoyées ni conservées","Sans inscription"]},
+{"@type":"SoftwareApplication","@id":"https://splitglass.com/outils/modele-bpu-dqe-excel#app","name":"Modèle Excel BPU, DQE et BPDE","url":"https://splitglass.com/outils/modele-bpu-dqe-excel","downloadUrl":"https://splitglass.com/downloads/modele-bpu-dqe-bpde-maroc.xlsx","applicationCategory":"BusinessApplication","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"MAD"},"inLanguage":["fr","ar"],"publisher":{"@id":"https://splitglass.com/#organization"},"featureList":["Dix feuilles reliées : paramètres, BPU, DQE, BPDE, marché-cadre, sous-détail, contrôles, détail des lignes, mode d'emploi","Mille lignes, sous-totaux par chapitre, TVA, totaux HT et TTC","Montant en toutes lettres en français","Contrôles automatiques : prix manquant, plus de deux décimales, doublons","Feuille marché-cadre avec quantités minimale et maximale","Français et arabe, sans macro","Sans inscription"]},
 {"@type":"WebPage","@id":"https://1splitglass.github.io/#webpage","url":"https://1splitglass.github.io/","name":"SPLITGLASS Maroc : appels d'offres n°1, vraie valeur à 0 coût","inLanguage":["fr","ar"],"about":{"@id":"https://splitglass.com/#organization"},"isPartOf":{"@type":"WebSite","url":"https://splitglass.com/","name":"SPLITGLASS"}}
 ]}
 </script>
@@ -130,7 +133,7 @@ footer a{color:var(--muted)}
 <div class="wrap">
 <div class="seam cols3">
 <div><p class="tag">01</p><h2>Honnêteté</h2><p>Chaque règle juridique renvoie à son article. Chaque erreur corrigée est consignée avec sa date. Aucune publicité, aucun classement vendu.</p></div>
-<div><p class="tag">02</p><h2>Solutions concrètes</h2><p>Un calculateur du prix de référence, un modèle Excel BPU, DQE et BPDE et une checklist du dossier administratif, vérifiés avant publication.</p></div>
+<div><p class="tag">02</p><h2>Solutions concrètes</h2><p>Un calculateur du prix de référence, un modèle Excel BPU, DQE et BPDE et une checklist du dossier administratif : des jours de conception, de tests et de relectures, offerts.</p></div>
 <div><p class="tag">03</p><h2>Valeur sans frais</h2><p>L'annuaire et les outils sont gratuits et s'utilisent sans inscription. Nos alertes d'appels d'offres seront gratuites.</p></div>
 </div>
 </div>
@@ -139,12 +142,13 @@ footer a{color:var(--muted)}
 <section class="blk" id="outils">
 <div class="wrap">
 <p class="label">Gratuit, sans inscription</p>
-<h2 class="big">Les outils pour répondre à un marché public</h2>
+<h2 class="big">Des outils de professionnels, pour répondre à un marché public</h2>
+<p class="intro">Chaque outil représente des jours de conception, de tests dans Excel et de relectures indépendantes. Ils sont offerts, sans inscription, parce que préparer une offre sans erreur ne devrait pas dépendre d'un budget.</p>
 <div class="seam cols5">
 <a class="tool" href="https://splitglass.com/appels-offres-maroc"><p class="tag">portail officiel</p><h3>Annuaire des appels d'offres</h3><p>Objet, acheteur, lieu, estimation, caution provisoire, date limite. Chaque ligne renvoie à l'avis officiel.</p><span class="go">Ouvrir l'annuaire</span></a>
-<a class="tool" href="https://splitglass.com/outils/prix-de-reference"><p class="tag">art. 44 · art. 144</p><h3>Calculateur du prix de référence</h3><p>Le calcul se fait dans votre navigateur : vos saisies ne sont ni envoyées ni conservées.</p><span class="go">Calculer</span></a>
-<a class="tool" href="https://splitglass.com/outils/modele-bpu-dqe-excel"><p class="tag">XLSX</p><h3>Modèle Excel BPU, DQE et BPDE</h3><p>Téléchargement direct, en français et en arabe, avec totaux et montant en toutes lettres.</p><span class="go">Télécharger</span></a>
-<a class="tool" href="https://splitglass.com/outils/checklist-dossier-administratif"><p class="tag">art. 28</p><h3>Checklist du dossier administratif</h3><p>Les pièces à fournir selon votre statut, qui les délivre, leur validité, les erreurs fréquentes.</p><span class="go">Ouvrir la checklist</span></a>
+<a class="tool" href="https://splitglass.com/outils/prix-de-reference"><p class="tag">art. 44 · art. 144</p><h3>Calculateur du prix de référence</h3><p>Prix de référence (art. 44) et études (art. 144) avec arithmétique exacte : seuils, écarts et classement, sans arrondi caché. Le calcul se fait dans votre navigateur : vos saisies ne sont ni envoyées ni conservées.</p><span class="go">Calculer</span></a>
+<a class="tool" href="https://splitglass.com/outils/modele-bpu-dqe-excel"><p class="tag">XLSX</p><h3>Modèle Excel BPU, DQE et BPDE</h3><p>Dix feuilles reliées et 1 000 lignes : BPU, DQE, BPDE, marché-cadre, sous-détail, TVA, sous-totaux, montant en toutes lettres, contrôles automatiques. Français et arabe, sans macro, testé dans Excel.</p><span class="go">Télécharger</span></a>
+<a class="tool" href="https://splitglass.com/outils/checklist-dossier-administratif"><p class="tag">art. 28</p><h3>Checklist du dossier administratif</h3><p>Les pièces à fournir selon votre statut, qui les délivre, leur durée de validité et les erreurs fréquentes, à imprimer et à cocher.</p><span class="go">Ouvrir la checklist</span></a>
 <a class="tool" href="https://splitglass.com/blog"><p class="tag">décret 2-22-431</p><h3>Guides, article par article</h3><p>Le CPS, le CCAG, le BPU, la caution, les délais : chaque règle citée porte son numéro d'article.</p><span class="go">Lire les guides</span></a>
 </div>
 </div>
@@ -164,7 +168,7 @@ footer a{color:var(--muted)}
 <h2 class="big">سبليت‌غلاس: منصة طلبات العروض <span class="hi">رقم 1</span> في المغرب التي تقدم قيمة حقيقية <span class="hi">بتكلفة صفر</span>.</h2>
 <div class="seam cols3">
 <div><p class="tag">01</p><h3>الأمانة</h3><p>كل قاعدة قانونية تحيل إلى مادتها، وكل خطأ يُصحَّح يُسجَّل بتاريخه. لا إشهار ولا ترتيب مدفوع.</p></div>
-<div><p class="tag">02</p><h3>حلول ملموسة</h3><p>حاسبة الثمن المرجعي، ونموذج Excel لجدول الأثمان والبيان التقديري، وقائمة مراجعة الملف الإداري، تتم مراجعتها قبل النشر.</p></div>
+<div><p class="tag">02</p><h3>حلول ملموسة</h3><p>حاسبة الثمن المرجعي، ونموذج Excel لجدول الأثمان والبيان التقديري، وقائمة مراجعة الملف الإداري: أيام من التصميم والاختبار والمراجعة، تُقدَّم مجانا.</p></div>
 <div><p class="tag">03</p><h3>قيمة بلا مقابل</h3><p>الدليل والأدوات مجانية وتُستعمل دون تسجيل. وتنبيهاتنا لطلبات العروض ستكون مجانية.</p></div>
 </div>
 <p style="margin:1.5rem 0 0"><a class="btn" href="https://splitglass.com/ar/appels-offres-maroc">دليل طلبات العروض المفتوحة</a> <a class="btn alt" href="https://splitglass.com/ar/outils">الأدوات المجانية</a> <a class="btn alt" href="https://splitglass.com/ar/a-propos">حول سبليت‌غلاس</a></p>
