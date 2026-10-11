@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPLITGLASS Maroc : appels d'offres n°1, vraie valeur à 0 coût</title>
+<meta name="description" content="SPLITGLASS : la plateforme d'appels d'offres n°1 au Maroc qui offre une vraie valeur à 0 coût. Annuaire, guides article par article et trois outils gratuits, sans inscription : prix de référence, modèle Excel BPU/DQE/BPDE, checklist.">
+<link rel="canonical" href="https://1splitglass.github.io/">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SPLITGLASS">
+<meta property="og:title" content="SPLITGLASS Maroc : la plateforme d'appels d'offres n°1 qui offre une vraie valeur à 0 coût">
+<meta property="og:description" content="La plateforme d'appels d'offres n°1 au Maroc qui offre une vraie valeur à 0 coût : annuaire, outils et guides gratuits, sans inscription.">
+<meta property="og:url" content="https://1splitglass.github.io/">
+<meta property="og:image" content="https://1splitglass.github.io/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070d24">
+<link rel="preload" href="fonts/anton-sc-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Anton SC';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/anton-sc-latin.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/inter-latin.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:200 700;font-display:swap;src:url(fonts/jetbrains-mono-latin.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-400.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-600.woff2) format('woff2')}
+
+/* SPLITGLASS brand: night and lit cobalt, paper printed in cobalt ink; square corners; 6 px seams (the gap of the mark) */
+:root{
+  --night:#070d24; --ground:#0a1334; --panel:#0c1740; --cobalt:#1a3cc8; --accent:#2979ff; --ice:#e2f2ff;
+  --fg:#e2f2ff; --muted:rgba(226,242,255,.72); --dim:rgba(226,242,255,.52); --line:rgba(226,242,255,.14);
+  --seam:#2979ff; --link:#9db8ff; --btn-bg:#2979ff; --btn-fg:#04102e; --mk:#2979ff; --wm:#ffffff;
+  --bg:#070d24; --tile:#0b1640;
+}
+@media (prefers-color-scheme:light){
+  :root{
+    --fg:#1a3cc8; --muted:#4459b5; --dim:#6a7cc4; --line:rgba(26,60,200,.22);
+    --seam:#1a3cc8; --link:#1a3cc8; --btn-bg:#1a3cc8; --btn-fg:#f1efea; --mk:#1a3cc8; --wm:#070d24;
+    --bg:#f1efea; --tile:#e8e5dd;
+  }
+}
+*{box-sizing:border-box;border-radius:0}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1rem/1.65 'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+a{color:var(--link);text-underline-offset:.18em}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.25rem}
+.lockup{height:1.55rem;width:auto;display:block}
+.lockup .mk{fill:var(--mk)}
+.lockup .wm{fill:var(--wm)}
+
+/* top bar: the lockup only */
+.top{padding:1.6rem 0 0}
+
+/* hero: the light is the subject; a horizon glow in a night-to-cobalt ramp */
+.hero{position:relative;overflow:hidden;padding:clamp(3rem,9vw,6.5rem) 0 clamp(3rem,8vw,5.5rem)}
+.hero::before{content:"";position:absolute;inset:auto 0 0 0;height:75%;pointer-events:none;
+  background:radial-gradient(70% 90% at 50% 120%,rgba(41,121,255,.45),rgba(26,60,200,.18) 45%,transparent 72%)}
+@media (prefers-color-scheme:light){.hero::before{background:none}}
+.hero .wrap{position:relative}
+.label{font:500 .875rem/1.3 'Inter',sans-serif;color:var(--muted);margin:0 0 1rem}
+h1{font:400 clamp(1.85rem,5.2vw,3.9rem)/1.08 'Anton SC','Inter',sans-serif;letter-spacing:.005em;margin:0;max-width:34em}
+h1 .hi{color:var(--accent)}
+.sub{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--muted);max-width:42rem;margin:1.5rem 0 0}
+.cta{display:flex;flex-wrap:wrap;gap:6px;margin-top:2rem}
+.btn{display:inline-block;padding:.85rem 1.3rem;font:600 .95rem/1 'Inter',sans-serif;background:var(--btn-bg);color:var(--btn-fg);text-decoration:none}
+.btn.alt{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--line)}
+.btn:hover{filter:brightness(1.1)}
+
+/* compositions split by 6 px seams, the same gap as the mark */
+.seam{display:grid;gap:6px;background:var(--seam)}
+.seam > *{background:var(--tile);padding:1.5rem 1.4rem}
+.cols3{grid-template-columns:repeat(3,1fr)}
+.cols5{grid-template-columns:repeat(6,1fr)}
+.cols5 > *{grid-column:span 2}
+.cols5 > :nth-child(4),.cols5 > :nth-child(5){grid-column:span 3}
+@media (max-width:880px){.cols3{grid-template-columns:1fr}.cols5{grid-template-columns:1fr 1fr}.cols5 > *,.cols5 > :nth-child(4),.cols5 > :nth-child(5){grid-column:auto}.cols5 > :last-child{grid-column:1 / -1}}
+@media (max-width:560px){.cols5{grid-template-columns:1fr}}
+.seam h2,.seam h3{font:600 1.1rem/1.3 'Inter',sans-serif;margin:.25rem 0 .6rem}
+.seam p{margin:0;color:var(--muted)}
+.tag{font:400 .8rem/1.2 'JetBrains Mono',ui-monospace,monospace;color:var(--dim);margin:0 0 .7rem;letter-spacing:.02em}
+.tool{display:block;text-decoration:none;color:inherit}
+.tool:hover h3{text-decoration:underline;text-underline-offset:.18em}
+.tool h3{color:var(--fg)}
+.tool .go{display:inline-block;margin-top:.9rem;color:var(--link);font-weight:600;font-size:.92rem}
+
+section.blk{padding:clamp(2.5rem,6vw,4rem) 0 0}
+section.blk > .wrap > .label{margin-bottom:.4rem}
+h2.big{font:400 clamp(1.8rem,4.2vw,2.8rem)/1.1 'Anton SC','Inter',sans-serif;margin:0 0 1.5rem;max-width:26ch}
+.who p{max-width:46rem;color:var(--muted)}
+.who strong{color:var(--fg)}
+
+/* Arabic edition: its own block, right to left */
+.ar{padding:clamp(2.5rem,6vw,4rem) 0 0;font-family:'IBM Plex Sans Arabic','Inter',sans-serif}
+.ar h2.big .hi{color:var(--accent)}
+.ar h2.big{font:600 clamp(1.5rem,3.6vw,2.3rem)/1.35 'IBM Plex Sans Arabic','Inter',sans-serif;max-width:none}
+.ar .label{font-family:'IBM Plex Sans Arabic','Inter',sans-serif}
+.ar .seam > *{padding:1.4rem 1.4rem}
+.ar .seam h3{font-family:'IBM Plex Sans Arabic','Inter',sans-serif}
+
+footer{margin-top:clamp(3rem,7vw,5rem);padding:1.6rem 0 2.5rem;border-top:1px solid var(--line);color:var(--dim);font-size:.9rem}
+footer a{color:var(--muted)}
+.fine{font-size:.9rem;color:var(--dim);max-width:46rem;margin-top:1rem}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://splitglass.com/#organization","name":"SPLITGLASS","alternateName":["SplitGlass","SplitGlass Maroc","SPLITGLASS Maroc"],"url":"https://splitglass.com/","logo":"https://1splitglass.github.io/og-default.png","sameAs":["https://www.linkedin.com/company/splitglass","https://github.com/1SPLITGLASS","https://1splitglass.github.io/"]},
+{"@type":"WebPage","@id":"https://1splitglass.github.io/#webpage","url":"https://1splitglass.github.io/","name":"SPLITGLASS Maroc : appels d'offres n°1, vraie valeur à 0 coût","inLanguage":["fr","ar"],"about":{"@id":"https://splitglass.com/#organization"},"isPartOf":{"@type":"WebSite","url":"https://splitglass.com/","name":"SPLITGLASS"}}
+]}
+</script>
+</head>
+<body>
+
+<header class="top"><div class="wrap"><a href="https://splitglass.com/" aria-label="SPLITGLASS, splitglass.com"><svg class="lockup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5543 814" role="img" aria-label="SplitGlass"><g transform="translate(0 166)" class="mk"><path d="M0,319.157C-0,234.511 33.625,153.332 93.479,93.479C153.332,33.625 234.511,0 319.157,0L738.7,0C738.7,30.341 726.647,59.438 705.193,80.892C683.739,102.346 654.642,114.398 624.302,114.398L159.206,114.398L159.206,134.399C159.206,183.324 178.641,230.244 213.235,264.839C247.83,299.433 294.751,318.868 343.675,318.868L414.978,318.868L414.978,430.354C414.978,443.01 409.95,455.148 401.001,464.097C392.051,473.047 379.914,478.074 367.258,478.074C316.446,478.074 233.272,478.074 158.916,478.074C71.149,478.074 0,406.925 0,319.158Z"/><path d="M836.024,318.52C836.024,403.166 802.399,484.345 742.545,544.198C682.691,604.052 601.513,637.677 516.867,637.677L97.324,637.677C97.324,607.337 109.377,578.239 130.831,556.785C152.285,535.331 181.382,523.279 211.722,523.279L676.818,523.279L676.818,503.278C676.818,454.354 657.383,407.433 622.788,372.839C588.194,338.244 541.273,318.809 492.349,318.809L421.046,318.809C421.046,318.809 421.046,254.222 421.046,207.323C421.046,194.667 426.074,182.529 435.023,173.58C443.972,164.631 456.11,159.603 468.766,159.603C519.577,159.603 602.752,159.603 677.108,159.603C764.875,159.603 836.024,230.752 836.024,318.519Z"/></g><g><path class="wm" d="M1302.194,803.97l-228.419,0l0,-74.732l228.419,0c17.733,0 32.933,-6.263 45.599,-18.789c12.666,-12.526 19,-27.655 19,-45.388c0,-17.733 -6.333,-32.863 -19,-45.388c-12.666,-12.526 -27.866,-18.789 -45.599,-18.789l-111.887,0c-38.281,0 -71.003,-13.581 -98.165,-40.744c-27.163,-27.163 -40.744,-59.884 -40.744,-98.165c0,-38.562 13.511,-71.355 40.533,-98.376c27.022,-27.022 59.814,-40.533 98.376,-40.533l228.419,0l0,74.732l-228.419,0c-17.733,0 -32.933,6.263 -45.599,18.789c-12.666,12.526 -19,27.655 -19,45.388c0,17.733 6.333,32.863 19,45.388c12.666,12.526 27.866,18.789 45.599,18.789l111.887,0c38.281,0 71.003,13.581 98.165,40.744c27.163,27.163 40.744,59.884 40.744,98.165c0,38.562 -13.511,71.355 -40.533,98.376c-27.022,27.022 -59.814,40.533 -98.376,40.533Z"/><path class="wm" d="M1769.588,600.884l-181.553,0l0,203.508l-74.31,0l0,-481.327l255.863,0c38.562,0 71.355,13.511 98.376,40.533c27.022,27.022 40.533,59.814 40.533,98.376c0,38.281 -13.581,71.003 -40.744,98.165c-27.163,27.163 -59.884,40.744 -98.165,40.744Zm0,-203.086l-181.553,0l0,128.354l181.553,0c17.733,0 32.933,-6.263 45.599,-18.789c12.666,-12.526 19,-27.655 19,-45.388c0,-17.733 -6.333,-32.863 -19,-45.388c-12.666,-12.526 -27.866,-18.789 -45.599,-18.789Z"/><path class="wm" d="M2353.935,804.392l-373.662,0l0,-481.749l74.31,0l0,407.017l299.351,0l0,74.732Z"/><rect class="wm" x="2426.134" y="322.643" width="74.31" height="481.749"/><path class="wm" d="M3025.682,397.798l-188.731,0l0,406.594l-74.31,0l0,-406.594l-188.731,0l0,-74.732l451.772,0l0,74.732Z"/><path class="wm" d="M3580.474,563.729c0,32.651 -6.41,63.825 -19.231,93.521c-12.82,29.696 -30.006,55.31 -51.557,76.843c-21.551,21.533 -47.187,38.633 -76.909,51.299c-29.722,12.666 -60.922,19 -93.6,19c-32.401,0 -63.392,-6.333 -92.973,-19c-29.577,-12.666 -55.143,-29.626 -76.698,-50.877c-21.551,-21.252 -38.736,-46.655 -51.557,-76.21c-12.816,-29.555 -19.224,-60.658 -19.224,-93.31l0,-1.267c0,-43.348 11.048,-83.528 33.144,-120.543c22.096,-37.014 52.073,-66.288 89.932,-87.821c37.859,-21.533 79.025,-32.3 123.498,-32.3c54.888,0 104.428,16.185 148.62,48.555l-53.621,54.466c-28.429,-18.859 -60.095,-28.289 -94.999,-28.289c-47.007,0 -87.117,16.185 -120.332,48.555c-33.214,32.37 -49.822,71.495 -49.822,117.376c0,45.881 16.044,85.077 48.133,117.587c32.088,32.511 70.792,48.766 116.11,48.766c36.592,0 69.666,-11.048 99.221,-33.144c29.555,-22.096 49.681,-50.596 60.377,-85.499l3.378,-10.978l-154.109,0l0,-71.355l232.219,0l0,34.622Z"/><path class="wm" d="M4025.49,804.392l-373.662,0l0,-481.749l74.31,0l0,407.017l299.351,0l0,74.732Z"/><path class="wm" d="M4240.061,726.87l-42.306,77.522l-88.665,0l242.352,-454.305l242.352,454.305l-93.31,0l-39.844,-75.285l-220.579,0l0,-2.237Zm181.028,-72.495l-69.648,-131.601l-71.818,131.601l141.466,0Z"/><path class="wm" d="M4928.611,803.97l-228.419,0l0,-74.732l228.419,0c17.733,0 32.933,-6.263 45.599,-18.789c12.666,-12.526 19,-27.655 19,-45.388c0,-17.733 -6.333,-32.863 -19,-45.388c-12.666,-12.526 -27.866,-18.789 -45.599,-18.789l-111.887,0c-38.281,0 -71.003,-13.581 -98.165,-40.744c-27.163,-27.163 -40.744,-59.884 -40.744,-98.165c0,-38.562 13.511,-71.355 40.533,-98.376c27.022,-27.022 59.814,-40.533 98.376,-40.533l228.419,0l0,74.732l-228.419,0c-17.733,0 -32.933,6.263 -45.599,18.789c-12.666,12.526 -19,27.655 -19,45.388c0,17.733 6.333,32.863 19,45.388c12.666,12.526 27.866,18.789 45.599,18.789l111.887,0c38.281,0 71.003,13.581 98.165,40.744c27.163,27.163 40.744,59.884 40.744,98.165c0,38.562 -13.511,71.355 -40.533,98.376c-27.022,27.022 -59.814,40.533 -98.376,40.533Z"/><path class="wm" d="M5390.938,803.97l-228.419,0l0,-74.732l228.419,0c17.733,0 32.933,-6.263 45.599,-18.789c12.666,-12.526 19,-27.655 19,-45.388c0,-17.733 -6.333,-32.863 -19,-45.388c-12.666,-12.526 -27.866,-18.789 -45.599,-18.789l-111.887,0c-38.281,0 -71.003,-13.581 -98.165,-40.744c-27.163,-27.163 -40.744,-59.884 -40.744,-98.165c0,-38.562 13.511,-71.355 40.533,-98.376c27.022,-27.022 59.814,-40.533 98.376,-40.533l228.419,0l0,74.732l-228.419,0c-17.733,0 -32.933,6.263 -45.599,18.789c-12.666,12.526 -19,27.655 -19,45.388c0,17.733 6.333,32.863 19,45.388c12.666,12.526 27.866,18.789 45.599,18.789l111.887,0c38.281,0 71.003,13.581 98.165,40.744c27.163,27.163 40.744,59.884 40.744,98.165c0,38.562 -13.511,71.355 -40.533,98.376c-27.022,27.022 -59.814,40.533 -98.376,40.533Z"/></g></svg></a></div></header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+<p class="label">Appels d'offres publics au Maroc</p>
+<h1>SPLITGLASS. La plateforme d'appels d'offres <span class="hi">n°1</span> au Maroc qui offre une vraie valeur à <span class="hi">0 coût</span>.</h1>
+<p class="sub">Votre copilote pour répondre aux marchés publics : un annuaire, trois outils et des guides, gratuits et sans inscription.</p>
+<div class="cta">
+<a class="btn" href="https://splitglass.com/appels-offres-maroc">Voir les appels d'offres</a>
+<a class="btn alt" href="#outils">Les outils gratuits</a>
+</div>
+</div>
+</section>
+
+<section class="blk">
+<div class="wrap">
+<div class="seam cols3">
+<div><p class="tag">01</p><h2>Honnêteté</h2><p>Chaque règle juridique renvoie à son article. Chaque erreur corrigée est consignée avec sa date. Aucune publicité, aucun classement vendu.</p></div>
+<div><p class="tag">02</p><h2>Solutions concrètes</h2><p>Un calculateur du prix de référence, un modèle Excel BPU, DQE et BPDE et une checklist du dossier administratif, vérifiés avant publication.</p></div>
+<div><p class="tag">03</p><h2>Valeur sans frais</h2><p>L'annuaire et les outils sont gratuits et s'utilisent sans inscription. Nos alertes d'appels d'offres seront gratuites.</p></div>
+</div>
+</div>
+</section>
+
+<section class="blk" id="outils">
+<div class="wrap">
+<p class="label">Gratuit, sans inscription</p>
+<h2 class="big">Les outils pour répondre à un marché public</h2>
+<div class="seam cols5">
+<a class="tool" href="https://splitglass.com/appels-offres-maroc"><p class="tag">portail officiel</p><h3>Annuaire des appels d'offres</h3><p>Objet, acheteur, lieu, estimation, caution provisoire, date limite. Chaque ligne renvoie à l'avis officiel.</p><span class="go">Ouvrir l'annuaire</span></a>
+<a class="tool" href="https://splitglass.com/outils/prix-de-reference"><p class="tag">art. 44 · art. 144</p><h3>Calculateur du prix de référence</h3><p>Le calcul se fait dans votre navigateur : vos saisies ne sont ni envoyées ni conservées.</p><span class="go">Calculer</span></a>
+<a class="tool" href="https://splitglass.com/outils/modele-bpu-dqe-excel"><p class="tag">XLSX</p><h3>Modèle Excel BPU, DQE et BPDE</h3><p>Téléchargement direct, en français et en arabe, avec totaux et montant en toutes lettres.</p><span class="go">Télécharger</span></a>
+<a class="tool" href="https://splitglass.com/outils/checklist-dossier-administratif"><p class="tag">art. 28</p><h3>Checklist du dossier administratif</h3><p>Les pièces à fournir selon votre statut, qui les délivre, leur validité, les erreurs fréquentes.</p><span class="go">Ouvrir la checklist</span></a>
+<a class="tool" href="https://splitglass.com/blog"><p class="tag">décret 2-22-431</p><h3>Guides, article par article</h3><p>Le CPS, le CCAG, le BPU, la caution, les délais : chaque règle citée porte son numéro d'article.</p><span class="go">Lire les guides</span></a>
+</div>
+</div>
+</section>
+
+<section class="blk who">
+<div class="wrap">
+<p class="label">Qui publie SPLITGLASS</p>
+<p><strong>SPLITGLASS est publié par Hamza Atabrour</strong> (<a href="https://www.linkedin.com/in/hamzaatabrour">LinkedIn</a>). Les règles éditoriales, les sources et le journal des corrections sont sur la page <a href="https://splitglass.com/a-propos">À propos de SPLITGLASS</a> et sur la page <a href="https://splitglass.com/methode">Méthode et sources</a>. Profil de l'entreprise : <a href="https://www.linkedin.com/company/splitglass">SPLITGLASS sur LinkedIn</a>.</p>
+<p class="fine">SPLITGLASS n'est pas un site officiel et n'est affilié à aucune administration. Les avis viennent du portail officiel des marchés publics et renvoient vers l'avis officiel.</p>
+</div>
+</section>
+
+<section class="ar" lang="ar" dir="rtl">
+<div class="wrap">
+<p class="label">طلبات العروض العمومية بالمغرب</p>
+<h2 class="big">سبليت‌غلاس: منصة طلبات العروض <span class="hi">رقم 1</span> في المغرب التي تقدم قيمة حقيقية <span class="hi">بتكلفة صفر</span>.</h2>
+<div class="seam cols3">
+<div><p class="tag">01</p><h3>الأمانة</h3><p>كل قاعدة قانونية تحيل إلى مادتها، وكل خطأ يُصحَّح يُسجَّل بتاريخه. لا إشهار ولا ترتيب مدفوع.</p></div>
+<div><p class="tag">02</p><h3>حلول ملموسة</h3><p>حاسبة الثمن المرجعي، ونموذج Excel لجدول الأثمان والبيان التقديري، وقائمة مراجعة الملف الإداري، تتم مراجعتها قبل النشر.</p></div>
+<div><p class="tag">03</p><h3>قيمة بلا مقابل</h3><p>الدليل والأدوات مجانية وتُستعمل دون تسجيل. وتنبيهاتنا لطلبات العروض ستكون مجانية.</p></div>
+</div>
+<p style="margin:1.5rem 0 0"><a class="btn" href="https://splitglass.com/ar/appels-offres-maroc">دليل طلبات العروض المفتوحة</a> <a class="btn alt" href="https://splitglass.com/ar/outils">الأدوات المجانية</a> <a class="btn alt" href="https://splitglass.com/ar/a-propos">حول سبليت‌غلاس</a></p>
+<p class="fine">الموقع ليس رسميا وغير تابع لأي إدارة. يتم نشره من طرف <bdi>Hamza Atabrour</bdi>.</p>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">SPLITGLASS · <a href="https://splitglass.com/">splitglass.com</a> · <a href="https://github.com/1SPLITGLASS">GitHub</a> · <a href="https://www.linkedin.com/company/splitglass">LinkedIn</a></div></footer>
+</body>
+</html>
